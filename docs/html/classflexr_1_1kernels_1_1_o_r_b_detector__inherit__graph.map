@@ -1,0 +1,5 @@
+<map id="flexr::kernels::ORBDetector" name="flexr::kernels::ORBDetector">
+<area shape="rect" id="node1" title="Kernel to detect an registered marker with local feature matching and ORB algorithm." alt="" coords="5,155,204,181"/>
+<area shape="rect" id="node2" href="$classflexr_1_1kernels_1_1_fle_x_r_kernel.html" title="Base kernel." alt="" coords="8,80,201,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="59,5,151,32"/>
+</map>

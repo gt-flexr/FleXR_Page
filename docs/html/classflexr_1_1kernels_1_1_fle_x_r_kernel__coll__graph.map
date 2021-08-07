@@ -1,0 +1,6 @@
+<map id="flexr::kernels::FleXRKernel" name="flexr::kernels::FleXRKernel">
+<area shape="rect" id="node1" title="Base kernel." alt="" coords="99,109,292,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,97,39"/>
+<area shape="rect" id="node3" href="$classflexr_1_1components_1_1_logger.html" title="Component to log events of a kernel." alt="" coords="122,5,269,47"/>
+<area shape="rect" id="node4" href="$classflexr_1_1components_1_1_fle_x_r_port_manager.html" title="Component for managing kernels&#39; local and remote ports with the same APIs." alt="" coords="293,5,439,47"/>
+</map>

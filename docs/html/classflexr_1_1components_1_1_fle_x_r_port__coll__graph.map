@@ -1,0 +1,4 @@
+<map id="flexr::components::FleXRPort" name="flexr::components::FleXRPort">
+<area shape="rect" id="node1" title="Component for remote and local communications of kernels." alt="" coords="5,109,152,151"/>
+<area shape="rect" id="node2" href="$classflexr_1_1components_1_1_z_m_q_port.html" title="Component for remote port communication based on ZMQ." alt="" coords="5,5,152,47"/>
+</map>

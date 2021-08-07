@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classflexr_1_1components_1_1_r_o_s_bag_reader.html" title="Component to read recorded bag files." alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$classflexr_1_1components_1_1_r_o_s_bag_frame_reader.html" title="Component to read a rosbag." alt="" coords="200,5,361,47"/>
+</map>

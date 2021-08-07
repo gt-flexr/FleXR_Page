@@ -1,0 +1,5 @@
+<map id="flexr::kernels::Keyboard" name="flexr::kernels::Keyboard">
+<area shape="rect" id="node1" title="Kernel to get key strokes." alt="" coords="15,155,189,181"/>
+<area shape="rect" id="node2" href="$classflexr_1_1kernels_1_1_fle_x_r_kernel.html" title="Base kernel." alt="" coords="5,80,199,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="56,5,148,32"/>
+</map>

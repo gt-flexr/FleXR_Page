@@ -1,0 +1,4 @@
+<map id="flexr::components::ROSBagReader" name="flexr::components::ROSBagReader">
+<area shape="rect" id="node1" title="Component to read recorded bag files." alt="" coords="13,5,159,47"/>
+<area shape="rect" id="node2" href="$classflexr_1_1components_1_1_r_o_s_bag_frame_reader.html" title="Component to read a rosbag." alt="" coords="5,95,167,136"/>
+</map>

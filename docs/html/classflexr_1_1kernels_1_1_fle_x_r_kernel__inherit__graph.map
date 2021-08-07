@@ -1,0 +1,17 @@
+<map id="flexr::kernels::FleXRKernel" name="flexr::kernels::FleXRKernel">
+<area shape="rect" id="node1" title="Base kernel." alt="" coords="145,325,339,351"/>
+<area shape="rect" id="node3" href="$classflexr_1_1kernels_1_1_ar_uco_cam_locator.html" title="Kernel to get the camera pose from a detected ArUco marker." alt="" coords="405,5,587,47"/>
+<area shape="rect" id="node4" href="$classflexr_1_1kernels_1_1_ar_uco_detector.html" title="Kernel to detect ArUco markers." alt="" coords="391,71,601,98"/>
+<area shape="rect" id="node5" href="$classflexr_1_1kernels_1_1_bag_camera.html" title="Kernel to get camera frames from a bag file." alt="" coords="401,122,591,149"/>
+<area shape="rect" id="node6" href="$classflexr_1_1kernels_1_1_c_v_camera.html" title="Kernel to get camera frames from a camera device." alt="" coords="405,173,587,199"/>
+<area shape="rect" id="node7" href="$classflexr_1_1kernels_1_1_c_v_display.html" title="Kernel to display frames." alt="" coords="405,223,587,250"/>
+<area shape="rect" id="node8" href="$classflexr_1_1kernels_1_1_frame_converter.html" title="Kernel to convert the frame into another pixel format." alt="" coords="387,274,605,301"/>
+<area shape="rect" id="node9" href="$classflexr_1_1kernels_1_1_keyboard.html" title="Kernel to get key strokes." alt="" coords="409,325,583,351"/>
+<area shape="rect" id="node10" href="$classflexr_1_1kernels_1_1_marker_ctx_extractor.html" title="Kernel to extract the contexts of the detected markers in the corresponding camera frame." alt="" coords="405,376,587,417"/>
+<area shape="rect" id="node11" href="$classflexr_1_1kernels_1_1_non_display.html" title="Kernel to sink frames." alt="" coords="401,442,591,469"/>
+<area shape="rect" id="node12" href="$classflexr_1_1kernels_1_1_object_renderer.html" title="Kernel to render virtual objects on the detected markers." alt="" coords="389,493,603,519"/>
+<area shape="rect" id="node13" href="$classflexr_1_1kernels_1_1_o_r_b_detector.html" title="Kernel to detect an registered marker with local feature matching and ORB algorithm." alt="" coords="397,543,595,570"/>
+<area shape="rect" id="node14" href="$classflexr_1_1kernels_1_1_r_t_p_frame_receiver.html" title="Kernel to receive RTP frame stream." alt="" coords="407,595,585,636"/>
+<area shape="rect" id="node15" href="$classflexr_1_1kernels_1_1_r_t_p_frame_sender.html" title="Kernel to send RTP frame stream." alt="" coords="407,660,585,701"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,325,97,351"/>
+</map>
