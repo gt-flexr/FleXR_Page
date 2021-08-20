@@ -1,4 +1,7 @@
 <map id="flexrinc/kernels/source/bag_camera.h" name="flexrinc/kernels/source/bag_camera.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,47"/>
-<area shape="rect" id="node2" href="$bag__camera_8cc.html" title=" " alt="" coords="8,95,171,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="197,5,365,47"/>
+<area shape="rect" id="node2" href="$yaml__bag__camera_8h.html" title=" " alt="" coords="75,95,280,136"/>
+<area shape="rect" id="node5" href="$bag__camera_8cc.html" title=" " alt="" coords="304,95,467,136"/>
+<area shape="rect" id="node3" href="$yaml__parser_8h.html" title=" " alt="" coords="5,184,149,225"/>
+<area shape="rect" id="node4" href="$yaml__bag__camera_8cc.html" title=" " alt="" coords="173,184,384,225"/>
 </map>

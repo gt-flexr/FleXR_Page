@@ -1,13 +1,9 @@
-<map id="flexrinc/types/cv/orb_marker_tracker.h" name="flexrinc/types/cv/orb_marker_tracker.h">
-<area shape="rect" id="node1" title=" " alt="" coords="473,5,627,47"/>
-<area shape="rect" id="node2" href="$cv__utils_8h.html" title=" " alt="" coords="375,102,543,129"/>
-<area shape="rect" id="node11" href="$orb__marker__tracker_8cc.html" title=" " alt="" coords="567,95,717,136"/>
-<area shape="rect" id="node3" href="$orb__detector_8h.html" title=" " alt="" coords="5,184,215,225"/>
-<area shape="rect" id="node5" href="$frame__converter_8h.html" title=" " alt="" coords="239,184,448,225"/>
-<area shape="rect" id="node7" href="$aruco__detector_8h.html" title=" " alt="" coords="472,184,681,225"/>
-<area shape="rect" id="node9" href="$aruco__cam__locator_8h.html" title=" " alt="" coords="705,184,915,225"/>
-<area shape="rect" id="node4" href="$orb__detector_8cc.html" title=" " alt="" coords="8,273,212,315"/>
-<area shape="rect" id="node6" href="$frame__converter_8cc.html" title=" " alt="" coords="241,273,445,315"/>
-<area shape="rect" id="node8" href="$aruco__detector_8cc.html" title=" " alt="" coords="475,273,679,315"/>
-<area shape="rect" id="node10" href="$aruco__cam__locator_8cc.html" title=" " alt="" coords="708,273,912,315"/>
+<map id="flexrinc/components/orb_marker_tracker.h" name="flexrinc/components/orb_marker_tracker.h">
+<area shape="rect" id="node1" title=" " alt="" coords="303,5,465,47"/>
+<area shape="rect" id="node2" href="$orb__detector_8h.html" title=" " alt="" coords="171,95,381,136"/>
+<area shape="rect" id="node7" href="$orb__marker__tracker_8cc.html" title=" " alt="" coords="405,95,579,136"/>
+<area shape="rect" id="node3" href="$yaml__orb__detector_8h.html" title=" " alt="" coords="82,184,257,240"/>
+<area shape="rect" id="node6" href="$orb__detector_8cc.html" title=" " alt="" coords="281,191,485,233"/>
+<area shape="rect" id="node4" href="$yaml__parser_8h.html" title=" " alt="" coords="5,295,149,337"/>
+<area shape="rect" id="node5" href="$yaml__orb__detector_8cc.html" title=" " alt="" coords="174,288,349,344"/>
 </map>

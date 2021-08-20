@@ -1,4 +1,7 @@
 <map id="flexrinc/kernels/source/cv_camera.h" name="flexrinc/kernels/source/cv_camera.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,47"/>
-<area shape="rect" id="node2" href="$cv__camera_8cc.html" title=" " alt="" coords="8,95,171,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,361,47"/>
+<area shape="rect" id="node2" href="$yaml__cv__camera_8h.html" title=" " alt="" coords="78,95,274,136"/>
+<area shape="rect" id="node5" href="$cv__camera_8cc.html" title=" " alt="" coords="299,95,461,136"/>
+<area shape="rect" id="node3" href="$yaml__parser_8h.html" title=" " alt="" coords="5,184,149,225"/>
+<area shape="rect" id="node4" href="$yaml__cv__camera_8cc.html" title=" " alt="" coords="173,184,376,225"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="flexrinc/kernels/source/keyboard.h" name="flexrinc/kernels/source/keyboard.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,47"/>
-<area shape="rect" id="node2" href="$keyboard_8cc.html" title=" " alt="" coords="8,95,171,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="188,5,356,47"/>
+<area shape="rect" id="node2" href="$yaml__keyboard_8h.html" title=" " alt="" coords="81,95,266,136"/>
+<area shape="rect" id="node5" href="$keyboard_8cc.html" title=" " alt="" coords="291,95,453,136"/>
+<area shape="rect" id="node3" href="$yaml__parser_8h.html" title=" " alt="" coords="5,184,149,225"/>
+<area shape="rect" id="node4" href="$yaml__keyboard_8cc.html" title=" " alt="" coords="174,184,365,225"/>
 </map>

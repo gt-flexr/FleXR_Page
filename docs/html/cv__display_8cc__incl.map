@@ -1,33 +1,34 @@
 <map id="source/kernels/sink/cv_display.cc" name="source/kernels/sink/cv_display.cc">
-<area shape="rect" id="node1" title=" " alt="" coords="1111,5,1257,47"/>
-<area shape="rect" id="node2" href="$kernel_8h.html" title=" " alt="" coords="965,177,1091,203"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1315,5,1461,47"/>
+<area shape="rect" id="node2" href="$kernel_8h.html" title=" " alt="" coords="951,177,1076,203"/>
 <area shape="rect" id="node12" title=" " alt="" coords="5,266,80,293"/>
-<area shape="rect" id="node25" href="$cv__display_8h.html" title=" " alt="" coords="1361,95,1543,121"/>
-<area shape="rect" id="node31" title=" " alt="" coords="1568,95,1627,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="1438,437,1549,464"/>
-<area shape="rect" id="node4" title=" " alt="" coords="1531,355,1611,382"/>
-<area shape="rect" id="node5" title=" " alt="" coords="1227,266,1271,293"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1855,437,2009,464"/>
-<area shape="rect" id="node7" title=" " alt="" coords="260,512,327,539"/>
-<area shape="rect" id="node8" title=" " alt="" coords="616,266,680,293"/>
-<area shape="rect" id="node9" title=" " alt="" coords="705,266,858,293"/>
-<area shape="rect" id="node10" title=" " alt="" coords="547,355,671,382"/>
-<area shape="rect" id="node11" title=" " alt="" coords="331,348,472,389"/>
-<area shape="rect" id="node13" href="$defs_8h.html" title=" " alt="" coords="1105,437,1167,464"/>
-<area shape="rect" id="node14" href="$clock__types_8h.html" title=" " alt="" coords="105,266,255,293"/>
-<area shape="rect" id="node15" href="$types_8h.html" title=" " alt="" coords="1449,266,1559,293"/>
-<area shape="rect" id="node16" href="$frame_8h.html" title=" " alt="" coords="1686,355,1799,382"/>
-<area shape="rect" id="node18" href="$flexr__port__manager_8h.html" title=" " alt="" coords="883,259,1051,300"/>
-<area shape="rect" id="node24" href="$logger_8h.html" title=" " alt="" coords="382,266,541,293"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1661,437,1824,464"/>
-<area shape="rect" id="node19" title=" " alt="" coords="933,437,1054,464"/>
-<area shape="rect" id="node20" href="$flexr__port_8h.html" title=" " alt="" coords="1174,355,1354,382"/>
-<area shape="rect" id="node21" href="$zmq__port_8h.html" title=" " alt="" coords="1213,437,1392,464"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1271,512,1334,539"/>
-<area shape="rect" id="node23" title=" " alt="" coords="1841,512,1919,539"/>
-<area shape="rect" id="node26" title=" " alt="" coords="1977,355,2122,382"/>
-<area shape="rect" id="node27" title=" " alt="" coords="2147,355,2304,382"/>
-<area shape="rect" id="node28" href="$msg__receiving__functions_8h.html" title=" " alt="" coords="1633,169,1783,211"/>
-<area shape="rect" id="node29" title=" " alt="" coords="2012,266,2137,293"/>
-<area shape="rect" id="node30" href="$cv_2types_8h.html" title=" " alt="" coords="1858,266,1987,293"/>
+<area shape="rect" id="node26" href="$cv__display_8h.html" title=" " alt="" coords="1502,95,1685,121"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1709,95,1768,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="1041,437,1151,464"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1245,355,1325,382"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1491,266,1535,293"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1721,437,1876,464"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1380,512,1447,539"/>
+<area shape="rect" id="node8" title=" " alt="" coords="296,266,360,293"/>
+<area shape="rect" id="node9" title=" " alt="" coords="385,266,538,293"/>
+<area shape="rect" id="node10" title=" " alt="" coords="279,355,403,382"/>
+<area shape="rect" id="node11" title=" " alt="" coords="683,348,824,389"/>
+<area shape="rect" id="node13" href="$defs_8h.html" title=" " alt="" coords="1382,437,1445,464"/>
+<area shape="rect" id="node14" href="$clock__types_8h.html" title=" " alt="" coords="2169,266,2319,293"/>
+<area shape="rect" id="node15" href="$types_8h.html" title=" " alt="" coords="1254,266,1365,293"/>
+<area shape="rect" id="node16" href="$frame_8h.html" title=" " alt="" coords="1553,355,1666,382"/>
+<area shape="rect" id="node18" href="$flexr__port__manager_8h.html" title=" " alt="" coords="104,259,272,300"/>
+<area shape="rect" id="node24" href="$logger_8h.html" title=" " alt="" coords="614,266,773,293"/>
+<area shape="rect" id="node25" href="$frequency__manager_8h.html" title=" " alt="" coords="949,348,1120,389"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1528,437,1691,464"/>
+<area shape="rect" id="node19" title=" " alt="" coords="339,437,461,464"/>
+<area shape="rect" id="node20" href="$flexr__port_8h.html" title=" " alt="" coords="427,355,607,382"/>
+<area shape="rect" id="node21" href="$zmq__port_8h.html" title=" " alt="" coords="536,437,715,464"/>
+<area shape="rect" id="node22" title=" " alt="" coords="594,512,657,539"/>
+<area shape="rect" id="node23" title=" " alt="" coords="950,512,1029,539"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1843,355,1989,382"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2013,355,2171,382"/>
+<area shape="rect" id="node29" href="$msg__receiving__functions_8h.html" title=" " alt="" coords="1587,169,1736,211"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1611,266,1736,293"/>
+<area shape="rect" id="node31" href="$cv_2types_8h.html" title=" " alt="" coords="1862,266,1991,293"/>
 </map>

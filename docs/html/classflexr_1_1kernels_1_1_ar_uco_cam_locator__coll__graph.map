@@ -1,7 +1,8 @@
 <map id="flexr::kernels::ArUcoCamLocator" name="flexr::kernels::ArUcoCamLocator">
-<area shape="rect" id="node1" title="Kernel to get the camera pose from a detected ArUco marker." alt="" coords="104,185,287,227"/>
-<area shape="rect" id="node2" href="$classflexr_1_1kernels_1_1_fle_x_r_kernel.html" title="Base kernel." alt="" coords="99,109,292,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,13,97,39"/>
-<area shape="rect" id="node4" href="$classflexr_1_1components_1_1_logger.html" title="Component to log events of a kernel." alt="" coords="122,5,269,47"/>
-<area shape="rect" id="node5" href="$classflexr_1_1components_1_1_fle_x_r_port_manager.html" title="Component for managing kernels&#39; local and remote ports with the same APIs." alt="" coords="293,5,439,47"/>
+<area shape="rect" id="node1" title="Kernel to get the camera pose from a detected ArUco marker." alt="" coords="531,90,713,131"/>
+<area shape="rect" id="node2" href="$classflexr_1_1kernels_1_1_fle_x_r_kernel.html" title="Base kernel." alt="" coords="288,97,481,124"/>
+<area shape="rect" id="node3" title=" " alt="" coords="33,5,125,32"/>
+<area shape="rect" id="node4" href="$classflexr_1_1components_1_1_logger.html" title="Component to log events of a kernel." alt="" coords="5,57,152,98"/>
+<area shape="rect" id="node5" href="$classflexr_1_1components_1_1_fle_x_r_port_manager.html" title="Component for managing kernels&#39; local and remote ports with the same APIs." alt="" coords="5,122,152,163"/>
+<area shape="rect" id="node6" href="$classflexr_1_1components_1_1_frequency_manager.html" title="Component to manage the frequency of kernel executions." alt="" coords="5,187,152,229"/>
 </map>

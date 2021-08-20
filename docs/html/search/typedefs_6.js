@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nondisplaymsgtype_1759',['NonDisplayMsgType',['../namespaceflexr_1_1kernels.html#a263f876d0a226f85a5039642683e6c1f',1,'flexr::kernels']]]
+  ['markerinfo_2142',['MarkerInfo',['../namespaceflexr_1_1cv__types.html#a911816429ef1c34ece726c6d2d5bb1cb',1,'flexr::cv_types']]]
 ];

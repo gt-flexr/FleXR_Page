@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FleXR: flexrinc/types/cv/orb_marker_tracker.h Source File</title>
+<title>FleXR: flexrinc/components/orb_marker_tracker.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_dd2022e6cb521943e219df91cb448792.html">flexrinc</a></li><li class="navelem"><a class="el" href="dir_5bad860247ea44afd1742ec94c7dde7b.html">types</a></li><li class="navelem"><a class="el" href="dir_5e43233593f68bb473bdb5c728423002.html">cv</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_dd2022e6cb521943e219df91cb448792.html">flexrinc</a></li><li class="navelem"><a class="el" href="dir_d1844f73c1fc29737950df2750437f2f.html">components</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,8 +72,8 @@ $(function() {
 <div class="title">orb_marker_tracker.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="orb__marker__tracker_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __FLEXR_ORB_MARKER_TRACKER__</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __FLEXR_ORB_MARKER_TRACKER__</span></div>
+<a href="orb__marker__tracker_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __FLEXR_COMPONENT_ORB_MARKER_TRACKER__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __FLEXR_COMPONENT_ORB_MARKER_TRACKER__</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bits/stdc++.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
@@ -84,38 +84,44 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceflexr.html">flexr</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1cv__types.html">   13</a></span>&#160;  <span class="keyword">namespace </span>cv_types</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">namespace </span>components</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html">ORBMarkerTracker</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classflexr_1_1components_1_1_orb_marker_tracker.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html">OrbMarkerTracker</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      cv::Ptr&lt;cv::Feature2D&gt; detector;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      cv::Ptr&lt;cv::DescriptorMatcher&gt; matcher;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      std::vector&lt;MarkerInfo&gt; markerInfo;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      std::vector&lt;cv_types::MarkerInfo&gt; markerInfo;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordtype">int</span> numOfObjs;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#a28cb51cfeb455eed886df5bf409eb8a6">ORBMarkerTracker</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#abd3d4a1e2ab95e0c16a34de78a6280b8">registerObject</a>(<span class="keyword">const</span> cv::Mat frame, cv::Rect roiRect);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#a81155a822a0ed661bf0d171789d8399f">printRegisteredObjects</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#abf253785a8d4a14d03653ca12e92e596">   28</a></span>&#160;      std::vector&lt;MarkerInfo&gt; <a class="code" href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#abf253785a8d4a14d03653ca12e92e596">getRegisteredObjects</a>() { <span class="keywordflow">return</span> markerInfo; }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  } <span class="comment">// namespace cv_types</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace flexr</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html#a4350d4dc45e24819c8e6c072944cb3d4">OrbMarkerTracker</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html#afb211f8bca4c33c541620cf9c4fc7a22">registerObject</a>(<span class="keyword">const</span> cv::Mat frame, cv::Rect roiRect);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html#a59718028c86260d630c3ac463a24001d">printRegisteredObjects</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classflexr_1_1components_1_1_orb_marker_tracker.html#a4ecb813e72395edda927ee2fecc6ace7">   28</a></span>&#160;      std::vector&lt;cv_types::MarkerInfo&gt; <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html#a4ecb813e72395edda927ee2fecc6ace7">getRegisteredObjects</a>() { <span class="keywordflow">return</span> markerInfo; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html#a0c70a0a860a05eba5fbe904a96a15bad">setMarkerFromImages</a>(std::string path, std::string stemName, <span class="keywordtype">int</span> startIndex, <span class="keywordtype">int</span> maxPlaceValue);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html#a0c70a0a860a05eba5fbe904a96a15bad">setMarkerFromImages</a>(std::string path, <span class="keywordtype">int</span> startIndex, <span class="keywordtype">int</span> maxPlaceValue);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html#a86dca0782c5b539750d6690ba7c506ee">setMarkerFromImage</a>(std::string path);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  } <span class="comment">// namespace components</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace flexr</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassflexr_1_1cv__types_1_1_o_r_b_marker_tracker_html_abd3d4a1e2ab95e0c16a34de78a6280b8"><div class="ttname"><a href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#abd3d4a1e2ab95e0c16a34de78a6280b8">flexr::cv_types::ORBMarkerTracker::registerObject</a></div><div class="ttdeci">void registerObject(const cv::Mat frame, cv::Rect roiRect)</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:13</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html_afb211f8bca4c33c541620cf9c4fc7a22"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html#afb211f8bca4c33c541620cf9c4fc7a22">flexr::components::OrbMarkerTracker::registerObject</a></div><div class="ttdeci">void registerObject(const cv::Mat frame, cv::Rect roiRect)</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:13</div></div>
 <div class="ttc" id="anamespaceflexr_html"><div class="ttname"><a href="namespaceflexr.html">flexr</a></div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:9</div></div>
-<div class="ttc" id="aclassflexr_1_1cv__types_1_1_o_r_b_marker_tracker_html"><div class="ttname"><a href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html">flexr::cv_types::ORBMarkerTracker</a></div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.h:16</div></div>
-<div class="ttc" id="aclassflexr_1_1cv__types_1_1_o_r_b_marker_tracker_html_abf253785a8d4a14d03653ca12e92e596"><div class="ttname"><a href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#abf253785a8d4a14d03653ca12e92e596">flexr::cv_types::ORBMarkerTracker::getRegisteredObjects</a></div><div class="ttdeci">std::vector&lt; MarkerInfo &gt; getRegisteredObjects()</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.h:28</div></div>
-<div class="ttc" id="aclassflexr_1_1cv__types_1_1_o_r_b_marker_tracker_html_a28cb51cfeb455eed886df5bf409eb8a6"><div class="ttname"><a href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#a28cb51cfeb455eed886df5bf409eb8a6">flexr::cv_types::ORBMarkerTracker::ORBMarkerTracker</a></div><div class="ttdeci">ORBMarkerTracker()</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:7</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html_a0c70a0a860a05eba5fbe904a96a15bad"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html#a0c70a0a860a05eba5fbe904a96a15bad">flexr::components::OrbMarkerTracker::setMarkerFromImages</a></div><div class="ttdeci">void setMarkerFromImages(std::string path, std::string stemName, int startIndex, int maxPlaceValue)</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:64</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html_a86dca0782c5b539750d6690ba7c506ee"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html#a86dca0782c5b539750d6690ba7c506ee">flexr::components::OrbMarkerTracker::setMarkerFromImage</a></div><div class="ttdeci">void setMarkerFromImage(std::string path)</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:107</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html_a4ecb813e72395edda927ee2fecc6ace7"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html#a4ecb813e72395edda927ee2fecc6ace7">flexr::components::OrbMarkerTracker::getRegisteredObjects</a></div><div class="ttdeci">std::vector&lt; cv_types::MarkerInfo &gt; getRegisteredObjects()</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.h:28</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html_a59718028c86260d630c3ac463a24001d"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html#a59718028c86260d630c3ac463a24001d">flexr::components::OrbMarkerTracker::printRegisteredObjects</a></div><div class="ttdeci">void printRegisteredObjects()</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:45</div></div>
 <div class="ttc" id="acv_2types_8h_html"><div class="ttname"><a href="cv_2types_8h.html">types.h</a></div></div>
 <div class="ttc" id="adefs_8h_html"><div class="ttname"><a href="defs_8h.html">defs.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1cv__types_1_1_o_r_b_marker_tracker_html_a81155a822a0ed661bf0d171789d8399f"><div class="ttname"><a href="classflexr_1_1cv__types_1_1_o_r_b_marker_tracker.html#a81155a822a0ed661bf0d171789d8399f">flexr::cv_types::ORBMarkerTracker::printRegisteredObjects</a></div><div class="ttdeci">void printRegisteredObjects()</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:45</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html">flexr::components::OrbMarkerTracker</a></div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.h:16</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html_a4350d4dc45e24819c8e6c072944cb3d4"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html#a4350d4dc45e24819c8e6c072944cb3d4">flexr::components::OrbMarkerTracker::OrbMarkerTracker</a></div><div class="ttdeci">OrbMarkerTracker()</div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.cc:7</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -83,63 +83,69 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;opencv2/highgui.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="defs_8h.html">defs.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cv__utils_8h.html">utils/cv_utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cv_2types_8h.html">types/cv/types.h</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="clock__types_8h.html">types/clock_types.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="frame_8h.html">types/frame.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="kernel_8h.html">kernels/kernel.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceflexr.html">flexr</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">namespace </span>kernels</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a08b9b37bb9820ae1c76729d39526985f">   24</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorInFrameType</a>   = <a class="code" href="classflexr_1_1types_1_1_message.html">types::Message&lt;types::Frame&gt;</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a9fb7a6bf17f549c231f3d5df27aca75a">   25</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorOutMarkerType</a> = <a class="code" href="classflexr_1_1types_1_1_message.html">types::Message&lt;std::vector&lt;cv_types::DetectedMarker&gt;</a>&gt;;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cv__utils_8h.html">utils/cv_utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="orb__marker__tracker_8h.html">components/orb_marker_tracker.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="kernel_8h.html">kernels/kernel.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceflexr.html">flexr</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">namespace </span>kernels</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_o_r_b_detector.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html">ORBDetector</a> : <span class="keyword">public</span> <a class="code" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">FleXRKernel</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::vector&lt;flexr::cv_types::MarkerInfo&gt; registeredMarkers;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        cv::Ptr&lt;cv::Feature2D&gt; detector;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        cv::Ptr&lt;cv::DescriptorMatcher&gt; matcher;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">double</span> knnMatchRatio;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">int</span> knnParam;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">double</span> ransacThresh;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> minInlierThresh;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a449b88e7c14dd55f361f758f3097899e">ORBDetector</a>(std::vector&lt;flexr::cv_types::MarkerInfo&gt; registeredMarkers);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        raft::kstatus <a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0d31cdd52e9610e8db7799d1a3bfe13d">run</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0e899583d88527a9dd66af398d065baf">logic</a>(<a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorInFrameType</a>   *inFrame,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                   <a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorOutMarkerType</a> *outDetectedMarkers);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a08b9b37bb9820ae1c76729d39526985f">   27</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorInFrameType</a>   = <a class="code" href="classflexr_1_1types_1_1_message.html">types::Message&lt;types::Frame&gt;</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a9fb7a6bf17f549c231f3d5df27aca75a">   28</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorOutMarkerType</a> = <a class="code" href="classflexr_1_1types_1_1_message.html">types::Message&lt;std::vector&lt;cv_types::DetectedMarker&gt;</a>&gt;;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_o_r_b_detector.html">   39</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html">ORBDetector</a> : <span class="keyword">public</span> <a class="code" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">FleXRKernel</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classflexr_1_1components_1_1_orb_marker_tracker.html">components::OrbMarkerTracker</a> orbMarkerTracker;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::vector&lt;flexr::cv_types::MarkerInfo&gt; registeredMarkers;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        cv::Ptr&lt;cv::Feature2D&gt; detector;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        cv::Ptr&lt;cv::DescriptorMatcher&gt; matcher;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">double</span> knnMatchRatio;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">int</span> knnParam;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">double</span> ransacThresh;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">int</span> minInlierThresh;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a23d402a907f4e72b3ef777fa4effd2dc">ORBDetector</a>(std::string <span class="keywordtype">id</span>, std::string markerImage);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }   <span class="comment">// namespace pipeline</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace flexr</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        raft::kstatus <a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0d31cdd52e9610e8db7799d1a3bfe13d">run</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0e899583d88527a9dd66af398d065baf">logic</a>(<a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorInFrameType</a>   *inFrame,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                   <a class="code" href="classflexr_1_1types_1_1_message.html">ORBDetectorOutMarkerType</a> *outDetectedMarkers);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }   <span class="comment">// namespace kernels</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace flexr</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
 <div class="ttc" id="anamespaceflexr_html"><div class="ttname"><a href="namespaceflexr.html">flexr</a></div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:9</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html_a0e899583d88527a9dd66af398d065baf"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0e899583d88527a9dd66af398d065baf">flexr::kernels::ORBDetector::logic</a></div><div class="ttdeci">bool logic(ORBDetectorInFrameType *inFrame, ORBDetectorOutMarkerType *outDetectedMarkers)</div><div class="ttdef"><b>Definition:</b> orb_detector.cc:30</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html">flexr::kernels::ORBDetector</a></div><div class="ttdoc">Kernel to detect an registered marker with local feature matching and ORB algorithm.</div><div class="ttdef"><b>Definition:</b> orb_detector.h:36</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html_a23d402a907f4e72b3ef777fa4effd2dc"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a23d402a907f4e72b3ef777fa4effd2dc">flexr::kernels::ORBDetector::ORBDetector</a></div><div class="ttdeci">ORBDetector(std::string id, std::string markerImage)</div><div class="ttdoc">Initialize kernel with registered marker info.</div><div class="ttdef"><b>Definition:</b> orb_detector.cc:11</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html_a0e899583d88527a9dd66af398d065baf"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0e899583d88527a9dd66af398d065baf">flexr::kernels::ORBDetector::logic</a></div><div class="ttdeci">bool logic(ORBDetectorInFrameType *inFrame, ORBDetectorOutMarkerType *outDetectedMarkers)</div><div class="ttdef"><b>Definition:</b> orb_detector.cc:34</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html">flexr::kernels::ORBDetector</a></div><div class="ttdoc">Kernel to detect an registered marker with local feature matching and ORB algorithm.</div><div class="ttdef"><b>Definition:</b> orb_detector.h:39</div></div>
 <div class="ttc" id="aclassflexr_1_1types_1_1_message_html"><div class="ttname"><a href="classflexr_1_1types_1_1_message.html">flexr::types::Message</a></div><div class="ttdef"><b>Definition:</b> types.h:21</div></div>
+<div class="ttc" id="aorb__marker__tracker_8h_html"><div class="ttname"><a href="orb__marker__tracker_8h.html">orb_marker_tracker.h</a></div></div>
 <div class="ttc" id="aframe_8h_html"><div class="ttname"><a href="frame_8h.html">frame.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html_a449b88e7c14dd55f361f758f3097899e"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a449b88e7c14dd55f361f758f3097899e">flexr::kernels::ORBDetector::ORBDetector</a></div><div class="ttdeci">ORBDetector(std::vector&lt; flexr::cv_types::MarkerInfo &gt; registeredMarkers)</div><div class="ttdoc">Initialize kernel with registered marker info.</div><div class="ttdef"><b>Definition:</b> orb_detector.cc:11</div></div>
 <div class="ttc" id="aclock__types_8h_html"><div class="ttname"><a href="clock__types_8h.html">clock_types.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:32</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:33</div></div>
 <div class="ttc" id="acv__utils_8h_html"><div class="ttname"><a href="cv__utils_8h.html">cv_utils.h</a></div></div>
 <div class="ttc" id="acv_2types_8h_html"><div class="ttname"><a href="cv_2types_8h.html">types.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html_a0d31cdd52e9610e8db7799d1a3bfe13d"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0d31cdd52e9610e8db7799d1a3bfe13d">flexr::kernels::ORBDetector::run</a></div><div class="ttdeci">raft::kstatus run() override</div><div class="ttdoc">Kernel interface for run.</div><div class="ttdef"><b>Definition:</b> orb_detector.cc:109</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_o_r_b_detector_html_a0d31cdd52e9610e8db7799d1a3bfe13d"><div class="ttname"><a href="classflexr_1_1kernels_1_1_o_r_b_detector.html#a0d31cdd52e9610e8db7799d1a3bfe13d">flexr::kernels::ORBDetector::run</a></div><div class="ttdeci">raft::kstatus run() override</div><div class="ttdoc">Kernel interface for run.</div><div class="ttdef"><b>Definition:</b> orb_detector.cc:114</div></div>
 <div class="ttc" id="adefs_8h_html"><div class="ttname"><a href="defs_8h.html">defs.h</a></div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_orb_marker_tracker_html"><div class="ttname"><a href="classflexr_1_1components_1_1_orb_marker_tracker.html">flexr::components::OrbMarkerTracker</a></div><div class="ttdef"><b>Definition:</b> orb_marker_tracker.h:16</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -97,43 +97,46 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      uint32_t seq;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <a class="code" href="classflexr_1_1components_1_1_r_o_s_bag_frame_reader.html">components::ROSBagFrameReader</a> bagReader;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <a class="code" href="classflexr_1_1components_1_1_frequency_manager.html">components::FrequencyManager</a> freqManager;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#adc34713ca1b03ba9035ba1ef6ff7bdb8">BagCamera</a>(std::string <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#acad2df6f0f38cbe0c4a382a11850282c">~BagCamera</a>();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#aa7335de1c96091d2bed2ff0238414b7b">BagCamera</a>(std::string <span class="keywordtype">id</span>=<span class="stringliteral">&quot;&quot;</span>, std::string bagPath=<span class="stringliteral">&quot;&quot;</span>, std::string bagTopic=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">int</span> targetFps=30);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#adc34713ca1b03ba9035ba1ef6ff7bdb8">BagCamera</a>(std::string <span class="keywordtype">id</span>, std::string bagPath, std::string bagTopic, <span class="keywordtype">int</span> targetFps);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#a59e02a9a7d3b1666e2692e30e6773c5a">setFramesToCache</a>(<span class="keywordtype">int</span> numFrames, <span class="keywordtype">int</span> startFrameIndex);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#a1aa152281feb802e4d48b63aaf929ad8">subscribeBagFile</a>(std::string bagPath, std::string bagTopic);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">virtual</span> raft::kstatus <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#a236a4435ca51732f9248ae4d4b74557c">run</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }   <span class="comment">// namespace kernels</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace flexr</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#a59e02a9a7d3b1666e2692e30e6773c5a">setFramesToCache</a>(<span class="keywordtype">int</span> numFrames, <span class="keywordtype">int</span> startFrameIndex);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">virtual</span> raft::kstatus <a class="code" href="classflexr_1_1kernels_1_1_bag_camera.html#a236a4435ca51732f9248ae4d4b74557c">run</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }   <span class="comment">// namespace kernels</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace flexr</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
 <div class="ttc" id="anamespaceflexr_html"><div class="ttname"><a href="namespaceflexr.html">flexr</a></div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:9</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_aa7335de1c96091d2bed2ff0238414b7b"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#aa7335de1c96091d2bed2ff0238414b7b">flexr::kernels::BagCamera::BagCamera</a></div><div class="ttdeci">BagCamera(std::string id=&quot;&quot;, std::string bagPath=&quot;&quot;, std::string bagTopic=&quot;&quot;, int targetFps=30)</div><div class="ttdoc">Initialize bag camera kernel.</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:11</div></div>
 <div class="ttc" id="afrequency__manager_8h_html"><div class="ttname"><a href="frequency__manager_8h.html">frequency_manager.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_a59e02a9a7d3b1666e2692e30e6773c5a"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#a59e02a9a7d3b1666e2692e30e6773c5a">flexr::kernels::BagCamera::setFramesToCache</a></div><div class="ttdeci">void setFramesToCache(int numFrames, int startFrameIndex)</div><div class="ttdoc">Set frame caching.</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:22</div></div>
-<div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html">flexr::components::FrequencyManager</a></div><div class="ttdoc">Component to manage the frequency of kernel executions.</div><div class="ttdef"><b>Definition:</b> frequency_manager.h:14</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_acad2df6f0f38cbe0c4a382a11850282c"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#acad2df6f0f38cbe0c4a382a11850282c">flexr::kernels::BagCamera::~BagCamera</a></div><div class="ttdeci">~BagCamera()</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:19</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_a59e02a9a7d3b1666e2692e30e6773c5a"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#a59e02a9a7d3b1666e2692e30e6773c5a">flexr::kernels::BagCamera::setFramesToCache</a></div><div class="ttdeci">void setFramesToCache(int numFrames, int startFrameIndex)</div><div class="ttdoc">Set frame caching.</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:32</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_adc34713ca1b03ba9035ba1ef6ff7bdb8"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#adc34713ca1b03ba9035ba1ef6ff7bdb8">flexr::kernels::BagCamera::BagCamera</a></div><div class="ttdeci">BagCamera(std::string id)</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:11</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_acad2df6f0f38cbe0c4a382a11850282c"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#acad2df6f0f38cbe0c4a382a11850282c">flexr::kernels::BagCamera::~BagCamera</a></div><div class="ttdeci">~BagCamera()</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:16</div></div>
 <div class="ttc" id="aclassflexr_1_1types_1_1_message_html"><div class="ttname"><a href="classflexr_1_1types_1_1_message.html">flexr::types::Message</a></div><div class="ttdef"><b>Definition:</b> types.h:21</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_a236a4435ca51732f9248ae4d4b74557c"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#a236a4435ca51732f9248ae4d4b74557c">flexr::kernels::BagCamera::run</a></div><div class="ttdeci">virtual raft::kstatus run()</div><div class="ttdoc">Kernel interface for run.</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:27</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_a236a4435ca51732f9248ae4d4b74557c"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#a236a4435ca51732f9248ae4d4b74557c">flexr::kernels::BagCamera::run</a></div><div class="ttdeci">virtual raft::kstatus run()</div><div class="ttdoc">Kernel interface for run.</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:38</div></div>
 <div class="ttc" id="aframe_8h_html"><div class="ttname"><a href="frame_8h.html">frame.h</a></div></div>
 <div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html">flexr::kernels::BagCamera</a></div><div class="ttdoc">Kernel to get camera frames from a bag file.</div><div class="ttdef"><b>Definition:</b> bag_camera.h:28</div></div>
 <div class="ttc" id="arosbag__frame__reader_8h_html"><div class="ttname"><a href="rosbag__frame__reader_8h.html">rosbag_frame_reader.h</a></div></div>
 <div class="ttc" id="aclock__types_8h_html"><div class="ttname"><a href="clock__types_8h.html">clock_types.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:32</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:33</div></div>
 <div class="ttc" id="aclassflexr_1_1components_1_1_r_o_s_bag_frame_reader_html"><div class="ttname"><a href="classflexr_1_1components_1_1_r_o_s_bag_frame_reader.html">flexr::components::ROSBagFrameReader</a></div><div class="ttdoc">Component to read a rosbag.</div><div class="ttdef"><b>Definition:</b> rosbag_frame_reader.h:18</div></div>
 <div class="ttc" id="adefs_8h_html"><div class="ttname"><a href="defs_8h.html">defs.h</a></div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_bag_camera_html_a1aa152281feb802e4d48b63aaf929ad8"><div class="ttname"><a href="classflexr_1_1kernels_1_1_bag_camera.html#a1aa152281feb802e4d48b63aaf929ad8">flexr::kernels::BagCamera::subscribeBagFile</a></div><div class="ttdeci">void subscribeBagFile(std::string bagPath, std::string bagTopic)</div><div class="ttdoc">Subscribe a bag file.</div><div class="ttdef"><b>Definition:</b> bag_camera.cc:26</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

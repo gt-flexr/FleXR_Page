@@ -1,13 +1,10 @@
 <map id="flexrinc/utils/cv_utils.h" name="flexrinc/utils/cv_utils.h">
-<area shape="rect" id="node1" title=" " alt="" coords="177,5,345,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="9,244,89,271"/>
-<area shape="rect" id="node3" title=" " alt="" coords="35,87,173,114"/>
-<area shape="rect" id="node4" title=" " alt="" coords="517,244,672,271"/>
-<area shape="rect" id="node5" title=" " alt="" coords="166,244,311,271"/>
-<area shape="rect" id="node6" title=" " alt="" coords="336,244,493,271"/>
-<area shape="rect" id="node7" href="$defs_8h.html" title=" " alt="" coords="723,244,786,271"/>
-<area shape="rect" id="node9" href="$orb__marker__tracker_8h.html" title=" " alt="" coords="440,80,595,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="721,319,788,345"/>
-<area shape="rect" id="node10" title=" " alt="" coords="606,169,717,196"/>
-<area shape="rect" id="node11" href="$cv_2types_8h.html" title=" " alt="" coords="350,169,479,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="352,5,520,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="110,80,247,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="272,80,427,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="451,80,597,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="621,80,779,107"/>
+<area shape="rect" id="node7" href="$defs_8h.html" title=" " alt="" coords="803,80,866,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="801,155,868,181"/>
 </map>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['frametype_1784',['FrameType',['../classflexr_1_1kernels_1_1_c_v_display.html#ad5c7e17251f13f2c91a42d09ba64c7a0',1,'flexr::kernels::CVDisplay']]]
+  ['portdependency_2166',['PortDependency',['../namespaceflexr_1_1components.html#a15155c2686a72eee5fc9222596ba8ed3',1,'flexr::components']]],
+  ['portstate_2167',['PortState',['../namespaceflexr_1_1components.html#abaf44be9d57be25a549258d9fcd9b179',1,'flexr::components']]]
 ];

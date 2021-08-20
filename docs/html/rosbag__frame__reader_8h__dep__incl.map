@@ -1,6 +1,9 @@
 <map id="flexrinc/components/rosbag_frame_reader.h" name="flexrinc/components/rosbag_frame_reader.h">
-<area shape="rect" id="node1" title=" " alt="" coords="104,5,280,47"/>
-<area shape="rect" id="node2" href="$bag__camera_8h.html" title=" " alt="" coords="5,95,173,136"/>
-<area shape="rect" id="node4" href="$rosbag__frame__reader_8cc.html" title=" " alt="" coords="197,95,395,136"/>
-<area shape="rect" id="node3" href="$bag__camera_8cc.html" title=" " alt="" coords="8,184,171,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="296,5,472,47"/>
+<area shape="rect" id="node2" href="$bag__camera_8h.html" title=" " alt="" coords="197,95,365,136"/>
+<area shape="rect" id="node7" href="$rosbag__frame__reader_8cc.html" title=" " alt="" coords="389,95,587,136"/>
+<area shape="rect" id="node3" href="$yaml__bag__camera_8h.html" title=" " alt="" coords="75,184,280,225"/>
+<area shape="rect" id="node6" href="$bag__camera_8cc.html" title=" " alt="" coords="304,184,467,225"/>
+<area shape="rect" id="node4" href="$yaml__parser_8h.html" title=" " alt="" coords="5,273,149,315"/>
+<area shape="rect" id="node5" href="$yaml__bag__camera_8cc.html" title=" " alt="" coords="173,273,384,315"/>
 </map>

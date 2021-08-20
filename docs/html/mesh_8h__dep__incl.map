@@ -1,10 +1,13 @@
 <map id="flexrinc/types/gl/mesh.h" name="flexrinc/types/gl/mesh.h">
-<area shape="rect" id="node1" title=" " alt="" coords="107,5,286,32"/>
-<area shape="rect" id="node2" href="$model_8h.html" title=" " alt="" coords="105,80,288,107"/>
-<area shape="rect" id="node3" href="$virtual__world_8h.html" title=" " alt="" coords="147,244,321,285"/>
-<area shape="rect" id="node5" href="$object__renderer_8h.html" title=" " alt="" coords="5,423,215,464"/>
-<area shape="rect" id="node8" href="$virtual__object_8h.html" title=" " alt="" coords="234,155,407,196"/>
-<area shape="rect" id="node4" href="$virtual__world__manager_8h.html" title=" " alt="" coords="187,333,361,375"/>
-<area shape="rect" id="node7" href="$virtual__world__manager_8cc.html" title=" " alt="" coords="239,423,389,464"/>
-<area shape="rect" id="node6" href="$object__renderer_8cc.html" title=" " alt="" coords="8,512,212,553"/>
+<area shape="rect" id="node1" title=" " alt="" coords="283,5,461,32"/>
+<area shape="rect" id="node2" href="$model_8h.html" title=" " alt="" coords="281,80,463,107"/>
+<area shape="rect" id="node3" href="$virtual__world_8h.html" title=" " alt="" coords="323,244,496,285"/>
+<area shape="rect" id="node5" href="$object__renderer_8h.html" title=" " alt="" coords="181,423,390,464"/>
+<area shape="rect" id="node11" href="$virtual__object_8h.html" title=" " alt="" coords="409,155,583,196"/>
+<area shape="rect" id="node4" href="$virtual__world__manager_8h.html" title=" " alt="" coords="363,333,536,375"/>
+<area shape="rect" id="node10" href="$virtual__world__manager_8cc.html" title=" " alt="" coords="414,423,565,464"/>
+<area shape="rect" id="node6" href="$yaml__object__renderer_8h.html" title=" " alt="" coords="76,512,271,568"/>
+<area shape="rect" id="node9" href="$object__renderer_8cc.html" title=" " alt="" coords="295,519,499,561"/>
+<area shape="rect" id="node7" href="$yaml__parser_8h.html" title=" " alt="" coords="5,623,149,665"/>
+<area shape="rect" id="node8" href="$yaml__object__renderer_8cc.html" title=" " alt="" coords="173,616,368,672"/>
 </map>

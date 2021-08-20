@@ -1,3 +1,17 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structstbi__io__callbacks.html" title=" " alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node1" href="$classflexr_1_1yaml_1_1_yaml_fle_x_r_kernel.html" title="Yaml FleXR kernel." alt="" coords="5,366,216,393"/>
+<area shape="rect" id="node2" href="$classflexr_1_1yaml_1_1_yaml_ar_uco_cam_locator.html" title="Yaml ArUcoCamLocator kernel." alt="" coords="282,5,482,47"/>
+<area shape="rect" id="node3" href="$classflexr_1_1yaml_1_1_yaml_ar_uco_detector.html" title="Yaml ArUcoDetector kernel." alt="" coords="269,71,495,98"/>
+<area shape="rect" id="node4" href="$classflexr_1_1yaml_1_1_yaml_bag_camera.html" title="Yaml Bag camera kernel." alt="" coords="279,122,485,149"/>
+<area shape="rect" id="node5" href="$classflexr_1_1yaml_1_1_yaml_cuda_orb_detector.html" title="Yaml CudaORBDetector kernel." alt="" coords="289,173,475,215"/>
+<area shape="rect" id="node6" href="$classflexr_1_1yaml_1_1_yaml_cv_camera.html" title="Yaml CVCamera kernel." alt="" coords="283,239,481,266"/>
+<area shape="rect" id="node7" href="$classflexr_1_1yaml_1_1_yaml_cv_display.html" title="Yaml CVDisplay kernel." alt="" coords="283,290,481,317"/>
+<area shape="rect" id="node8" href="$classflexr_1_1yaml_1_1_yaml_frame_converter.html" title="Yaml FrameConverter kernel." alt="" coords="264,341,500,367"/>
+<area shape="rect" id="node9" href="$classflexr_1_1yaml_1_1_yaml_keyboard.html" title="Yaml Keyboard kernel." alt="" coords="286,391,478,418"/>
+<area shape="rect" id="node10" href="$classflexr_1_1yaml_1_1_yaml_marker_ctx_extractor.html" title="Yaml MarkerCtxExtractor kernel." alt="" coords="283,443,481,484"/>
+<area shape="rect" id="node11" href="$classflexr_1_1yaml_1_1_yaml_non_display.html" title="Yaml NonDisplay kernel." alt="" coords="279,509,485,535"/>
+<area shape="rect" id="node12" href="$classflexr_1_1yaml_1_1_yaml_object_renderer.html" title="Yaml ObjectRenderer kernel." alt="" coords="266,559,498,586"/>
+<area shape="rect" id="node13" href="$classflexr_1_1yaml_1_1_yaml_orb_detector.html" title="Yaml ORBDetector kernel." alt="" coords="277,610,487,637"/>
+<area shape="rect" id="node14" href="$classflexr_1_1yaml_1_1_yaml_rtp_frame_receiver.html" title="Yaml RTPFrameReceiver kernel." alt="" coords="285,661,479,703"/>
+<area shape="rect" id="node15" href="$classflexr_1_1yaml_1_1_yaml_rtp_frame_sender.html" title="Yaml RTPFrameSender kernel." alt="" coords="285,727,479,768"/>
 </map>

@@ -95,19 +95,20 @@ Collaboration diagram for flexr::kernels::ObjectRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classflexr_1_1kernels_1_1_object_renderer__coll__graph.png" border="0" usemap="#flexr_1_1kernels_1_1_object_renderer_coll__map" alt="Collaboration graph"/></div>
 <map name="flexr_1_1kernels_1_1_object_renderer_coll__map" id="flexr_1_1kernels_1_1_object_renderer_coll__map">
-<area shape="rect" title="Kernel to render virtual objects on the detected markers." alt="" coords="88,185,303,212"/>
-<area shape="rect" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html" title="Base kernel." alt="" coords="99,109,292,136"/>
-<area shape="rect" title=" " alt="" coords="5,13,97,39"/>
-<area shape="rect" href="classflexr_1_1components_1_1_logger.html" title="Component to log events of a kernel." alt="" coords="122,5,269,47"/>
-<area shape="rect" href="classflexr_1_1components_1_1_fle_x_r_port_manager.html" title="Component for managing kernels&#39; local and remote ports with the same APIs." alt="" coords="293,5,439,47"/>
+<area shape="rect" title="Kernel to render virtual objects on the detected markers." alt="" coords="531,97,745,124"/>
+<area shape="rect" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html" title="Base kernel." alt="" coords="288,97,481,124"/>
+<area shape="rect" title=" " alt="" coords="33,5,125,32"/>
+<area shape="rect" href="classflexr_1_1components_1_1_logger.html" title="Component to log events of a kernel." alt="" coords="5,57,152,98"/>
+<area shape="rect" href="classflexr_1_1components_1_1_fle_x_r_port_manager.html" title="Component for managing kernels&#39; local and remote ports with the same APIs." alt="" coords="5,122,152,163"/>
+<area shape="rect" href="classflexr_1_1components_1_1_frequency_manager.html" title="Component to manage the frequency of kernel executions." alt="" coords="5,187,152,229"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac1819daf84608681585035f76a97e698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_object_renderer.html#ac1819daf84608681585035f76a97e698">ObjectRenderer</a> (std::vector&lt; <a class="el" href="structflexr_1_1cv__types_1_1_marker_info.html">flexr::cv_types::MarkerInfo</a> &gt; registeredMarkers, int width, int height)</td></tr>
-<tr class="memdesc:ac1819daf84608681585035f76a97e698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize kernel with registered marker info.  <a href="classflexr_1_1kernels_1_1_object_renderer.html#ac1819daf84608681585035f76a97e698">More...</a><br /></td></tr>
-<tr class="separator:ac1819daf84608681585035f76a97e698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a7a1db0783e4659fb00c8649d9e0b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_object_renderer.html#aa4a7a1db0783e4659fb00c8649d9e0b4">ObjectRenderer</a> (std::string <a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#add2f2dcd893109af0ffeeb899aab38cb">id</a>, int width, int height)</td></tr>
+<tr class="memdesc:aa4a7a1db0783e4659fb00c8649d9e0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize kernel with registered marker info.  <a href="classflexr_1_1kernels_1_1_object_renderer.html#aa4a7a1db0783e4659fb00c8649d9e0b4">More...</a><br /></td></tr>
+<tr class="separator:aa4a7a1db0783e4659fb00c8649d9e0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299d2ba6d05c1bc25fbb8a213a133f42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_object_renderer.html#a299d2ba6d05c1bc25fbb8a213a133f42">~ObjectRenderer</a> ()</td></tr>
 <tr class="separator:a299d2ba6d05c1bc25fbb8a213a133f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13ebc14600ae4593a080b4747bda5fc5"><td class="memItemLeft" align="right" valign="top">virtual raft::kstatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_object_renderer.html#a13ebc14600ae4593a080b4747bda5fc5">run</a> ()</td></tr>
@@ -122,6 +123,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3850074904facc977a4d82802ce96fb7 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46570b5994ac7baa1d9c70504cf2f346 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a46570b5994ac7baa1d9c70504cf2f346">FleXRKernel</a> (std::string <a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#add2f2dcd893109af0ffeeb899aab38cb">id</a>)</td></tr>
 <tr class="separator:a46570b5994ac7baa1d9c70504cf2f346 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf044fca880cf31aae7ebab1c52bbf91 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#acf044fca880cf31aae7ebab1c52bbf91">getId</a> ()</td></tr>
+<tr class="memdesc:acf044fca880cf31aae7ebab1c52bbf91 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get kernel ID.  <a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#acf044fca880cf31aae7ebab1c52bbf91">More...</a><br /></td></tr>
+<tr class="separator:acf044fca880cf31aae7ebab1c52bbf91 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae963b1c882f98bca51776e8f592de641 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#ae963b1c882f98bca51776e8f592de641">setName</a> (std::string newName)</td></tr>
+<tr class="memdesc:ae963b1c882f98bca51776e8f592de641 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set kernel class name.  <a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#ae963b1c882f98bca51776e8f592de641">More...</a><br /></td></tr>
+<tr class="separator:ae963b1c882f98bca51776e8f592de641 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20017486a10abcd04e775c59a8c10601 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a20017486a10abcd04e775c59a8c10601">getName</a> ()</td></tr>
+<tr class="memdesc:a20017486a10abcd04e775c59a8c10601 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get kernel class name.  <a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a20017486a10abcd04e775c59a8c10601">More...</a><br /></td></tr>
+<tr class="separator:a20017486a10abcd04e775c59a8c10601 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a375f110b92b97aa9672cfe83226cfa6e inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a375f110b92b97aa9672cfe83226cfa6e inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a375f110b92b97aa9672cfe83226cfa6e">activateInPortAsLocal</a> (const std::string tag)</td></tr>
 <tr class="memdesc:a375f110b92b97aa9672cfe83226cfa6e inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel interface to activate input port as local.  <a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a375f110b92b97aa9672cfe83226cfa6e">More...</a><br /></td></tr>
@@ -149,20 +159,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acca2d825550945a6777d76af3ac00ee0 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#acca2d825550945a6777d76af3ac00ee0">setLogger</a> (std::string loggerID, std::string logFileName)</td></tr>
 <tr class="memdesc:acca2d825550945a6777d76af3ac00ee0 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel interface to set a logger.  <a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#acca2d825550945a6777d76af3ac00ee0">More...</a><br /></td></tr>
 <tr class="separator:acca2d825550945a6777d76af3ac00ee0 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8568db0ab12edf10e3a7bb611b723b48 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a8568db0ab12edf10e3a7bb611b723b48">setDebugMode</a> ()</td></tr>
-<tr class="separator:a8568db0ab12edf10e3a7bb611b723b48 inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5858333e82d97767eb6dc4d69eef02e inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#ac5858333e82d97767eb6dc4d69eef02e">setFrequency</a> (int targetFrequency)</td></tr>
+<tr class="memdesc:ac5858333e82d97767eb6dc4d69eef02e inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel interface to set the running frequency.  <a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#ac5858333e82d97767eb6dc4d69eef02e">More...</a><br /></td></tr>
+<tr class="separator:ac5858333e82d97767eb6dc4d69eef02e inherit pub_methods_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></td></tr>
+<tr class="memitem:afea0549876141a7e5fc4f0372cf04860 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#afea0549876141a7e5fc4f0372cf04860">name</a></td></tr>
+<tr class="separator:afea0549876141a7e5fc4f0372cf04860 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2f2dcd893109af0ffeeb899aab38cb inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#add2f2dcd893109af0ffeeb899aab38cb">id</a></td></tr>
 <tr class="separator:add2f2dcd893109af0ffeeb899aab38cb inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06473c704b7f5c478eea48ca6f4db693 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classflexr_1_1components_1_1_fle_x_r_port_manager.html">components::FleXRPortManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a06473c704b7f5c478eea48ca6f4db693">portManager</a></td></tr>
 <tr class="separator:a06473c704b7f5c478eea48ca6f4db693 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1834f44e7a4f9175f973738796ec3f6 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classflexr_1_1components_1_1_logger.html">components::Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#af1834f44e7a4f9175f973738796ec3f6">logger</a></td></tr>
 <tr class="separator:af1834f44e7a4f9175f973738796ec3f6 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8143b55503b3b9ef8d2f7f905ef5747 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#ae8143b55503b3b9ef8d2f7f905ef5747">debugMode</a></td></tr>
-<tr class="separator:ae8143b55503b3b9ef8d2f7f905ef5747 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4caca95a261e3a90397d685ed2649462 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classflexr_1_1components_1_1_frequency_manager.html">components::FrequencyManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html#a4caca95a261e3a90397d685ed2649462">freqManager</a></td></tr>
+<tr class="separator:a4caca95a261e3a90397d685ed2649462 inherit pro_attribs_classflexr_1_1kernels_1_1_fle_x_r_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Kernel to render virtual objects on the detected markers. </p>
@@ -179,8 +192,8 @@ Additional Inherited Members</h2></td></tr>
 <td class="markdownTableBodyNone">out_frame </td><td class="markdownTableBodyNone"><a class="el" href="classflexr_1_1types_1_1_message.html">flexr::types::Message</a>&lt;<a class="el" href="classflexr_1_1types_1_1_frame.html">flexr::types::Frame</a>&gt;  </td></tr>
 </table>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac1819daf84608681585035f76a97e698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1819daf84608681585035f76a97e698">&#9670;&nbsp;</a></span>ObjectRenderer()</h2>
+<a id="aa4a7a1db0783e4659fb00c8649d9e0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a7a1db0783e4659fb00c8649d9e0b4">&#9670;&nbsp;</a></span>ObjectRenderer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,8 +201,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">flexr::kernels::ObjectRenderer::ObjectRenderer </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="structflexr_1_1cv__types_1_1_marker_info.html">flexr::cv_types::MarkerInfo</a> &gt;&#160;</td>
-          <td class="paramname"><em>registeredMarkers</em>, </td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

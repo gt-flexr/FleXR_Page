@@ -88,19 +88,21 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        uint32_t periodUs;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        uint32_t lastTs, exePeriod;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classflexr_1_1components_1_1_frequency_manager.html#a42f4d4459f7d3cb0df4bb953420f05a2">FrequencyManager</a>(<span class="keywordtype">int</span> targetFrequency);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_frequency_manager.html#a820c1dd672f8fdbb28e0ed4f7c6dcfc6">adjust</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classflexr_1_1components_1_1_frequency_manager.html#a089ad5fc2888f0cde49e9cf86f312d4f">FrequencyManager</a>(<span class="keywordtype">int</span> targetFrequency = 200);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_frequency_manager.html#a059e3ffe5e29c71b3ac66a731f6f875a">setFrequency</a>(<span class="keywordtype">int</span> targetFrequency);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1components_1_1_frequency_manager.html#a820c1dd672f8fdbb28e0ed4f7c6dcfc6">adjust</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceflexr_html"><div class="ttname"><a href="namespaceflexr.html">flexr</a></div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:9</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html_a059e3ffe5e29c71b3ac66a731f6f875a"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html#a059e3ffe5e29c71b3ac66a731f6f875a">flexr::components::FrequencyManager::setFrequency</a></div><div class="ttdeci">void setFrequency(int targetFrequency)</div><div class="ttdef"><b>Definition:</b> frequency_manager.cc:15</div></div>
 <div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html">flexr::components::FrequencyManager</a></div><div class="ttdoc">Component to manage the frequency of kernel executions.</div><div class="ttdef"><b>Definition:</b> frequency_manager.h:14</div></div>
-<div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html_a42f4d4459f7d3cb0df4bb953420f05a2"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html#a42f4d4459f7d3cb0df4bb953420f05a2">flexr::components::FrequencyManager::FrequencyManager</a></div><div class="ttdeci">FrequencyManager(int targetFrequency)</div><div class="ttdef"><b>Definition:</b> frequency_manager.cc:9</div></div>
-<div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html_a820c1dd672f8fdbb28e0ed4f7c6dcfc6"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html#a820c1dd672f8fdbb28e0ed4f7c6dcfc6">flexr::components::FrequencyManager::adjust</a></div><div class="ttdeci">void adjust()</div><div class="ttdef"><b>Definition:</b> frequency_manager.cc:15</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html_a089ad5fc2888f0cde49e9cf86f312d4f"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html#a089ad5fc2888f0cde49e9cf86f312d4f">flexr::components::FrequencyManager::FrequencyManager</a></div><div class="ttdeci">FrequencyManager(int targetFrequency=200)</div><div class="ttdef"><b>Definition:</b> frequency_manager.cc:9</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html_a820c1dd672f8fdbb28e0ed4f7c6dcfc6"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html#a820c1dd672f8fdbb28e0ed4f7c6dcfc6">flexr::components::FrequencyManager::adjust</a></div><div class="ttdeci">void adjust()</div><div class="ttdef"><b>Definition:</b> frequency_manager.cc:24</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

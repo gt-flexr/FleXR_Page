@@ -99,51 +99,41 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <a class="code" href="classflexr_1_1components_1_1_c_v_frame_reader.html">components::CVFrameReader</a> frameReader;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="classflexr_1_1components_1_1_frequency_manager.html">components::FrequencyManager</a> freqManager;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      uint32_t seq;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      uint32_t seq;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#a3dffe292b639c7ebe9fc51a7f2181a46">CVCamera</a>(std::string <span class="keywordtype">id</span>=<span class="stringliteral">&quot;cv_camera&quot;</span>, <span class="keywordtype">int</span> devIdx=0, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a>=1280, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>=720, <span class="keywordtype">int</span> tagetFps=30);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#a3b9824371015de98e3b1e77af50775a8">CVCamera</a>(std::string <span class="keywordtype">id</span>, <span class="keywordtype">int</span> devIdx, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a>, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>, <span class="keywordtype">int</span> tagetFps);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#ab1dcc200bee2aad03fb334732e9fafa3">~CVCamera</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#ab1dcc200bee2aad03fb334732e9fafa3">~CVCamera</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#a22be22c342115bf61503fe43536c9dfe">setIntrinsic</a>(cv::Mat inIntrinsic);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      raft::kstatus <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#a7942d4abddb87afe85c5e2886a9529d0">run</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }   <span class="comment">// namespace kernels</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace flexr</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#a4461ebb659f22ba159c2e137caaaef13">setDistCoeffs</a>(cv::Mat inDistCoeffs);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      raft::kstatus <a class="code" href="classflexr_1_1kernels_1_1_c_v_camera.html#a7942d4abddb87afe85c5e2886a9529d0">run</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }   <span class="comment">// namespace kernels</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace flexr</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_a7942d4abddb87afe85c5e2886a9529d0"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#a7942d4abddb87afe85c5e2886a9529d0">flexr::kernels::CVCamera::run</a></div><div class="ttdeci">raft::kstatus run() override</div><div class="ttdoc">Kernel interface for run.</div><div class="ttdef"><b>Definition:</b> cv_camera.cc:19</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_a7942d4abddb87afe85c5e2886a9529d0"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#a7942d4abddb87afe85c5e2886a9529d0">flexr::kernels::CVCamera::run</a></div><div class="ttdeci">raft::kstatus run() override</div><div class="ttdoc">Kernel interface for run.</div><div class="ttdef"><b>Definition:</b> cv_camera.cc:21</div></div>
 <div class="ttc" id="anamespaceflexr_html"><div class="ttname"><a href="namespaceflexr.html">flexr</a></div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:9</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_a3dffe292b639c7ebe9fc51a7f2181a46"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#a3dffe292b639c7ebe9fc51a7f2181a46">flexr::kernels::CVCamera::CVCamera</a></div><div class="ttdeci">CVCamera(std::string id=&quot;cv_camera&quot;, int devIdx=0, int width=1280, int height=720, int tagetFps=30)</div><div class="ttdoc">Initialize camera kernel.</div><div class="ttdef"><b>Definition:</b> cv_camera.cc:9</div></div>
 <div class="ttc" id="a_fle_x_r_plugin_8cc_html_ad12fc34ce789bce6c8a05d8a17138534"><div class="ttname"><a href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> FleXRPlugin.cc:15</div></div>
 <div class="ttc" id="afrequency__manager_8h_html"><div class="ttname"><a href="frequency__manager_8h.html">frequency_manager.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1components_1_1_frequency_manager_html"><div class="ttname"><a href="classflexr_1_1components_1_1_frequency_manager.html">flexr::components::FrequencyManager</a></div><div class="ttdoc">Component to manage the frequency of kernel executions.</div><div class="ttdef"><b>Definition:</b> frequency_manager.h:14</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_a4461ebb659f22ba159c2e137caaaef13"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#a4461ebb659f22ba159c2e137caaaef13">flexr::kernels::CVCamera::setDistCoeffs</a></div><div class="ttdeci">void setDistCoeffs(cv::Mat inDistCoeffs)</div><div class="ttdoc">Set camera distortion coefficients.</div></div>
-<div class="ttc" id="aclassflexr_1_1components_1_1_c_v_frame_reader_html"><div class="ttname"><a href="classflexr_1_1components_1_1_c_v_frame_reader.html">flexr::components::CVFrameReader</a></div><div class="ttdoc">Component for live camera stream with OpenCV.</div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:16</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_ab1dcc200bee2aad03fb334732e9fafa3"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#ab1dcc200bee2aad03fb334732e9fafa3">flexr::kernels::CVCamera::~CVCamera</a></div><div class="ttdeci">~CVCamera()</div><div class="ttdef"><b>Definition:</b> cv_camera.cc:16</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_a22be22c342115bf61503fe43536c9dfe"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#a22be22c342115bf61503fe43536c9dfe">flexr::kernels::CVCamera::setIntrinsic</a></div><div class="ttdeci">void setIntrinsic(cv::Mat inIntrinsic)</div><div class="ttdoc">Set camera intrinsic matrix.</div></div>
+<div class="ttc" id="aclassflexr_1_1components_1_1_c_v_frame_reader_html"><div class="ttname"><a href="classflexr_1_1components_1_1_c_v_frame_reader.html">flexr::components::CVFrameReader</a></div><div class="ttdoc">Component for live camera stream with OpenCV.</div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:18</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_ab1dcc200bee2aad03fb334732e9fafa3"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#ab1dcc200bee2aad03fb334732e9fafa3">flexr::kernels::CVCamera::~CVCamera</a></div><div class="ttdeci">~CVCamera()</div><div class="ttdef"><b>Definition:</b> cv_camera.cc:18</div></div>
 <div class="ttc" id="aclassflexr_1_1types_1_1_message_html"><div class="ttname"><a href="classflexr_1_1types_1_1_message.html">flexr::types::Message</a></div><div class="ttdef"><b>Definition:</b> types.h:21</div></div>
 <div class="ttc" id="aframe_8h_html"><div class="ttname"><a href="frame_8h.html">frame.h</a></div></div>
 <div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html">flexr::kernels::CVCamera</a></div><div class="ttdoc">Kernel to get camera frames from a camera device.</div><div class="ttdef"><b>Definition:</b> cv_camera.h:31</div></div>
 <div class="ttc" id="aclock__types_8h_html"><div class="ttname"><a href="clock__types_8h.html">clock_types.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:32</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:33</div></div>
 <div class="ttc" id="acv__frame__reader_8h_html"><div class="ttname"><a href="cv__frame__reader_8h.html">cv_frame_reader.h</a></div></div>
 <div class="ttc" id="a_fle_x_r_plugin_8cc_html_a2474a5474cbff19523a51eb1de01cda4"><div class="ttname"><a href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> FleXRPlugin.cc:15</div></div>
 <div class="ttc" id="adefs_8h_html"><div class="ttname"><a href="defs_8h.html">defs.h</a></div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_c_v_camera_html_a3b9824371015de98e3b1e77af50775a8"><div class="ttname"><a href="classflexr_1_1kernels_1_1_c_v_camera.html#a3b9824371015de98e3b1e77af50775a8">flexr::kernels::CVCamera::CVCamera</a></div><div class="ttdeci">CVCamera(std::string id, int devIdx, int width, int height, int tagetFps)</div><div class="ttdoc">Initialize camera kernel.</div><div class="ttdef"><b>Definition:</b> cv_camera.cc:9</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

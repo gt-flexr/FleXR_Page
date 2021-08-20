@@ -96,28 +96,29 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespaceflexr_1_1types.html">flexr::types</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a677ab8c2f371a84dcbeb94d010b8bc55">   25</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">OutCamPose</a> = <a class="code" href="classflexr_1_1types_1_1_message.html">Message&lt;ObjectPose&gt;</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a8c1d8102215118427678c71f35ce6c7b">   25</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">ArUcoCamLocatorInFrameType</a> = <a class="code" href="classflexr_1_1types_1_1_message.html">Message&lt;Frame&gt;</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a3b2a900c90972d395f1d5b2d75a6dad3">   26</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">ArUcoCamLocatorOutPoseType</a> = <a class="code" href="classflexr_1_1types_1_1_message.html">Message&lt;ObjectPose&gt;</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">ArUcoCamLocator</a> : <span class="keyword">public</span> <a class="code" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">FleXRKernel</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        cv::Mat camIntrinsic, camDistCoeffs;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        cv::Ptr&lt;cv::aruco::Dictionary&gt; markerDict;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">ArUcoCamLocator</a> : <span class="keyword">public</span> <a class="code" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">FleXRKernel</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        cv::Mat camIntrinsic, camDistCoeffs;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        cv::Ptr&lt;cv::aruco::Dictionary&gt; markerDict;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">ArUcoCamLocator</a>(cv::aruco::PREDEFINED_DICTIONARY_NAME dictName = cv::aruco::DICT_6X6_250,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a> = 1920, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a> = 1080);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        raft::kstatus run() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">ArUcoCamLocator</a>(std::string <span class="keywordtype">id</span>, cv::aruco::PREDEFINED_DICTIONARY_NAME dictName = cv::aruco::DICT_6X6_250,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a> = 1920, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a> = 1080);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }   <span class="comment">// namespace pipeline</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace flexr</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        raft::kstatus run() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }   <span class="comment">// namespace pipeline</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace flexr</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
 <div class="ttc" id="anamespaceflexr_html"><div class="ttname"><a href="namespaceflexr.html">flexr</a></div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:9</div></div>
@@ -126,9 +127,9 @@ $(function() {
 <div class="ttc" id="aclassflexr_1_1types_1_1_message_html"><div class="ttname"><a href="classflexr_1_1types_1_1_message.html">flexr::types::Message</a></div><div class="ttdef"><b>Definition:</b> types.h:21</div></div>
 <div class="ttc" id="anamespaceflexr_1_1types_html"><div class="ttname"><a href="namespaceflexr_1_1types.html">flexr::types</a></div><div class="ttdef"><b>Definition:</b> clock_types.h:7</div></div>
 <div class="ttc" id="aframe_8h_html"><div class="ttname"><a href="frame_8h.html">frame.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_ar_uco_cam_locator_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">flexr::kernels::ArUcoCamLocator</a></div><div class="ttdoc">Kernel to get the camera pose from a detected ArUco marker.</div><div class="ttdef"><b>Definition:</b> aruco_cam_locator.h:36</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_ar_uco_cam_locator_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_ar_uco_cam_locator.html">flexr::kernels::ArUcoCamLocator</a></div><div class="ttdoc">Kernel to get the camera pose from a detected ArUco marker.</div><div class="ttdef"><b>Definition:</b> aruco_cam_locator.h:37</div></div>
 <div class="ttc" id="aclock__types_8h_html"><div class="ttname"><a href="clock__types_8h.html">clock_types.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:32</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:33</div></div>
 <div class="ttc" id="acv__utils_8h_html"><div class="ttname"><a href="cv__utils_8h.html">cv_utils.h</a></div></div>
 <div class="ttc" id="acv_2types_8h_html"><div class="ttname"><a href="cv_2types_8h.html">types.h</a></div></div>
 <div class="ttc" id="a_fle_x_r_plugin_8cc_html_a2474a5474cbff19523a51eb1de01cda4"><div class="ttname"><a href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> FleXRPlugin.cc:15</div></div>

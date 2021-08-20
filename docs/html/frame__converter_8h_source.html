@@ -93,46 +93,64 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">namespace </span>kernels</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespaceflexr_1_1types.html">flexr::types</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html">FrameConverter</a> : <span class="keyword">public</span> <a class="code" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">FleXRKernel</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97">   35</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36">Conversion</a> { <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97">RGB2RGBA</a>,</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6">   36</a></span>&#160;                          <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6">RGBA2RGB</a>,</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36abf06232204f1e956f0a959b5325bf5a9">   37</a></span>&#160;                          BGRA2RGB };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html">FrameConverter</a>(std::string <span class="keywordtype">id</span>, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a>, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>, Conversion conv);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        raft::kstatus run() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a>, <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        cv::Mat inFormat;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">int</span> inFrameSize;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Conversion conv;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#a70d98b98d506101a083527ff0f012ec6">   22</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">FrameConverterInMsgType</a> = <a class="code" href="classflexr_1_1types_1_1_message.html">types::Message&lt;types::Frame&gt;</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceflexr_1_1kernels.html#afee7b696d0e3a0bb7254d0e67ae5b41a">   23</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classflexr_1_1types_1_1_message.html">FrameConverterOutMsgType</a> = <a class="code" href="classflexr_1_1types_1_1_message.html">types::Message&lt;types::Frame&gt;</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html">   34</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html">FrameConverter</a> : <span class="keyword">public</span> <a class="code" href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">FleXRKernel</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97">   37</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36">Conversion</a> { <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97">RGB2RGBA</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6">   38</a></span>&#160;                          <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6">RGBA2RGB</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36abf06232204f1e956f0a959b5325bf5a9">   39</a></span>&#160;                          BGRA2RGB };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html">FrameConverter</a>(std::string <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classflexr_1_1kernels_1_1_frame_converter.html">FrameConverter</a>(std::string <span class="keywordtype">id</span>, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a>, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>, Conversion conv);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }   <span class="comment">// namespace kernels</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// namespace flexr</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> setResolution(<span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a>, <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> setConversion(std::string conversionType);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> setConversion(Conversion conv);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        raft::kstatus run() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a>, <a class="code" href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Conversion conv;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        cv::Mat inFormat;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">int</span> inFrameSize;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span> setInFormat();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    };</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }   <span class="comment">// namespace kernels</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace flexr</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
 <div class="ttc" id="anamespaceflexr_html"><div class="ttname"><a href="namespaceflexr.html">flexr</a></div><div class="ttdef"><b>Definition:</b> cv_frame_reader.h:9</div></div>
 <div class="ttc" id="a_fle_x_r_plugin_8cc_html_ad12fc34ce789bce6c8a05d8a17138534"><div class="ttname"><a href="_fle_x_r_plugin_8cc.html#ad12fc34ce789bce6c8a05d8a17138534">height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> FleXRPlugin.cc:15</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html_a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6">flexr::kernels::FrameConverter::RGBA2RGB</a></div><div class="ttdeci">@ RGBA2RGB</div><div class="ttdef"><b>Definition:</b> frame_converter.h:36</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html_a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97">flexr::kernels::FrameConverter::RGB2RGBA</a></div><div class="ttdeci">@ RGB2RGBA</div><div class="ttdef"><b>Definition:</b> frame_converter.h:35</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html_a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a4fa224c9cb525fee7a95e2992b8741b6">flexr::kernels::FrameConverter::RGBA2RGB</a></div><div class="ttdeci">@ RGBA2RGB</div><div class="ttdef"><b>Definition:</b> frame_converter.h:38</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html_a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36a9eee4df99ec1f324fe610400ec94ae97">flexr::kernels::FrameConverter::RGB2RGBA</a></div><div class="ttdeci">@ RGB2RGBA</div><div class="ttdef"><b>Definition:</b> frame_converter.h:37</div></div>
+<div class="ttc" id="aclassflexr_1_1types_1_1_message_html"><div class="ttname"><a href="classflexr_1_1types_1_1_message.html">flexr::types::Message</a></div><div class="ttdef"><b>Definition:</b> types.h:21</div></div>
 <div class="ttc" id="anamespaceflexr_1_1types_html"><div class="ttname"><a href="namespaceflexr_1_1types.html">flexr::types</a></div><div class="ttdef"><b>Definition:</b> clock_types.h:7</div></div>
 <div class="ttc" id="aframe_8h_html"><div class="ttname"><a href="frame_8h.html">frame.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html">flexr::kernels::FrameConverter</a></div><div class="ttdoc">Kernel to convert the frame into another pixel format.</div><div class="ttdef"><b>Definition:</b> frame_converter.h:32</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html">flexr::kernels::FrameConverter</a></div><div class="ttdoc">Kernel to convert the frame into another pixel format.</div><div class="ttdef"><b>Definition:</b> frame_converter.h:34</div></div>
 <div class="ttc" id="aclock__types_8h_html"><div class="ttname"><a href="clock__types_8h.html">clock_types.h</a></div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html_a68bdffe1ff077c90b1885343efc74b36"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36">flexr::kernels::FrameConverter::Conversion</a></div><div class="ttdeci">Conversion</div><div class="ttdef"><b>Definition:</b> frame_converter.h:35</div></div>
-<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:32</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_frame_converter_html_a68bdffe1ff077c90b1885343efc74b36"><div class="ttname"><a href="classflexr_1_1kernels_1_1_frame_converter.html#a68bdffe1ff077c90b1885343efc74b36">flexr::kernels::FrameConverter::Conversion</a></div><div class="ttdeci">Conversion</div><div class="ttdef"><b>Definition:</b> frame_converter.h:37</div></div>
+<div class="ttc" id="aclassflexr_1_1kernels_1_1_fle_x_r_kernel_html"><div class="ttname"><a href="classflexr_1_1kernels_1_1_fle_x_r_kernel.html">flexr::kernels::FleXRKernel</a></div><div class="ttdoc">Base kernel.</div><div class="ttdef"><b>Definition:</b> kernel.h:33</div></div>
 <div class="ttc" id="acv__utils_8h_html"><div class="ttname"><a href="cv__utils_8h.html">cv_utils.h</a></div></div>
 <div class="ttc" id="acv_2types_8h_html"><div class="ttname"><a href="cv_2types_8h.html">types.h</a></div></div>
 <div class="ttc" id="a_fle_x_r_plugin_8cc_html_a2474a5474cbff19523a51eb1de01cda4"><div class="ttname"><a href="_fle_x_r_plugin_8cc.html#a2474a5474cbff19523a51eb1de01cda4">width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> FleXRPlugin.cc:15</div></div>
